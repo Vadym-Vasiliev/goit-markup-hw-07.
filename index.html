@@ -17,9 +17,9 @@
 
 <body>
 
-    <!-- main -->
+    <!-- MAIN -->
     <main>
-        <!-- header -->     
+        <!-- HEADER -->     
         <header class="header"> 
             <div class="header__container container">
                     <nav class="site-nav">
@@ -57,14 +57,14 @@
             </div>
         </header>
 
-        <!-- hero -->
+        <!-- HERO -->
         <section class="hero">
             <h1 class="hero__title">Эффективные решения<br> для вашего бизнеса</h1>
 
             <button type="button" class="button" data-modal-open>Заказать услугу</button>
         </section>
 
-        <!-- specifics -->
+        <!-- SPECIFICS -->
         <section class="specifics">
             <div class="container">
                 <h2 class="specifics__title visually-hidden">specifics</h2>
@@ -122,7 +122,7 @@
             </div>
         </section>
 
-        <!-- interests -->
+        <!-- INTERESTS -->
         <section class="interests">
             <div class="container">
                 <h2 class="interests__title">Чем мы занимаемся</h2>
@@ -159,7 +159,7 @@
             </div>
         </section>
 
-        <!-- team -->
+        <!-- TEAM -->
         <section class="team">
             <div class="container">
                 <h2 class="team__title">Наша команда</h2>
@@ -326,7 +326,7 @@
             </div>
         </section>
 
-        <!-- clients -->
+        <!-- CLIENTS -->
         <section class="clients">
             <div class="container">
                 <h2 class="clients__title">Постоянные клиенты</h2>
@@ -379,69 +379,77 @@
         </section>
     </main>
 
-    <!-- footer -->
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="footer__container container">
                 <div class="footer__box">
                     <a href="./index.html" class="footer__logo logo">Web<span class="footer__logo--accent">Studio</span></a>
 
-                    <address class="footer-address">
-                        <ul class="list-address">
-                            <li class="item-address"><a href="" class="link-address link-map">г. Киев, пр-т Леси
+                    <address class="footer__address">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__link footer__link--street">г. Киев, пр-т Леси
                                     Украинки,
-                                    26</a></li>
-                            <li class="item-address"><a href="mailto:info@example.com"
-                                    class="link-address">info@example.com</a>
+                                    26
+                                </a>
                             </li>
-                            <li class="item-address"><a href="tel:+380991111111" class="link-address">+38 099 111 11
-                                    11</a></li>
+                            <li class="footer__item">
+                                    <a href="mailto:info@example.com"
+                                    class="footer__link">info@example.com
+                                    </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="tel:+380991111111" 
+                                class="footer__link">+38 099 111 11 11
+                                </a>
+                            </li>
                         </ul>
                     </address>
                 </div>
 
-                <div class="second-block">
-                    <p class="text-footer">присоединяйтесь</p>
-                    <ul class="list-footer">
-                        <li class="item-footer">
-                            <a href="" class="link-footer">
-                                <svg class="svg-footer" width="20" height="20">
+                <div class="footer-soclist">
+                    <p class="footer-soclist__text">присоединяйтесь</p>
+                    <ul class="footer-soclist__list">
+                        <li class="footer-soclist__item">
+                            <a href="" class="footer-soclist__link">
+                                <svg class="footer-soclist__icon" width="20" height="20">
                                     <use href="./img/icon/sprite.svg#icon-footer-link"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="item-footer">
-                            <a href="" class="link-footer">
-                                <svg class="svg-footer" width="20" height="20">
+                        <li class="footer-soclist__item">
+                            <a href="" class="footer-soclist__link">
+                                <svg class="footer-soclist__icon" width="20" height="20">
                                     <use href="./img/icon/sprite.svg#icon-footer-link2"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="item-footer">
-                            <a href="" class="link-footer">
-                                <svg class="svg-footer" width="20" height="20">
+                        <li class="footer-soclist__item">
+                            <a href="" class="footer-soclist__link">
+                                <svg class="footer-soclist__icon" width="20" height="20">
                                     <use href="./img/icon/sprite.svg#icon-footer-link3"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="item-footer">
-                            <a href="" class="link-footer">
-                                <svg class="svg-footer" width="20" height="20">
+                        <li class="footer-soclist__item">
+                            <a href="" class="footer-soclist__link">
+                                <svg class="footer-soclist__icon" width="20" height="20">
                                     <use href="./img/icon/sprite.svg#icon-footer-link4"></use>
                                 </svg>
                             </a>
                         </li>
-                    </ul>
-                </div>
+                    
+             </div>
 
-                <div class="email-input">
-                    <p class="text-footer">Подпишитесь на рассылку</p>
+                <div class="footer-subscribe">
+                    <p class="footer-subscribe__text">Подпишитесь на рассылку</p>
 
-                    <input class="input-email" type="email" name="email" placeholder="E-mail">
+                    <input class="footer-subscribe__input" type="email" name="email" placeholder="E-mail">
 
-                    <button type="button" class="btn-email">
+                    <button type="button" class="footer-subscribe__btn">
                         Подписаться
 
-                        <svg class="svg-email" width="24" height="24">
+                        <svg class="footer-subscribe__icon" width="24" height="24">
                             <use href="./img/icon/sprite.svg#icon-airplane"></use>
                         </svg>
                     </button>
@@ -449,64 +457,66 @@
         </div>
     </footer>
 
-    <!-- Modal -->
+    <!-- MODAL -->
 
-    <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-            <button class="close-btn" data-modal-close>
-                <svg class="close-svg" width="11" height="11">
+    <div class="backdrop backdrop__is-hidden" data-modal>
+        <div class="backdrop-modal">
+            <button class="backdrop-modal__btn" data-modal-close>
+                <svg class="backdrop-modal__icon" width="11" height="11">
                     <use href="./img/icon/sprite.svg#icon-close"></use>
                 </svg>
             </button>
 
-            <form class="form-modal">
-                <p class="text-modal">Оставьте свои данные, мы вам перезвоним</p>
+            <form class="modal-form">
+                <p class="modal-form__text">Оставьте свои данные, мы вам перезвоним</p>
 
-                <div class="form-field">
-                    <label class="label-modal" for="name">Имя</label>
-                    <input class="input-all" type="text" name="name" id="name">
-                    <svg class="svg-modal">
+                <div class="modal-form__field">
+                    <label class="modal-form__label" for="name">Имя</label>
+                    <input class="modal-form__input" type="text" name="name" id="name">
+                    <svg class="modal-form__icon">
                         <use href="./img/icon/sprite.svg#icon-name-modal"></use>
                     </svg>
 
-                </div>
+                </div>  
 
-                <div class="form-field">
-                    <label class="label-modal" for="tel">Телефон</label>
-                    <input class="input-all" type="tel" name="tel" id="tel">
-                    <svg class="svg-modal">
+                <div class="modal-form__field">
+                    <label class="modal-form__label" for="name">Телефон</label>
+                    <input class="modal-form__input" type="text" name="name" id="name">
+                    <svg class="modal-form__icon">
                         <use href="./img/icon/sprite.svg#icon-tel-modal"></use>
                     </svg>
+                
                 </div>
 
-                <div class="form-field">
-                    <label class="label-modal" for="mail">Почта</label>
-                    <input class="input-all" type="email" name="mail" id="mail">
-                    <svg class="svg-modal">
+                <div class="modal-form__field">
+                    <label class="modal-form__label" for="name">Почта</label>
+                    <input class="modal-form__input" type="text" name="name" id="name">
+                    <svg class="modal-form__icon">
                         <use href="./img/icon/sprite.svg#icon-mail-modal"></use>
                     </svg>
+                
                 </div>
 
-                <div class="form-field">
-                    <label class="label-modal" for="comment">Комментарий</label>
-                    <textarea class="comment" name="comment" id="comment" rows="10"
+                <div class="modal-form__field">
+                    <label class="modal-form__label" for="comment">Комментарий</label>
+                    <textarea class="modal-form__comment" name="comment" id="comment" rows="10"
                         placeholder="Введите текст"></textarea>
                 </div>
 
                 <div class="form-checkbox">
-                    <input class="input-checkbox" type="checkbox" name="policy" id="policy">
-                    <label class="label-checkbox label-letter" for="policy">Соглашаюсь с рассылкой и принимаю </label>
-                    <a href="" class="link-checkbox">Условия договора</a>
+                    <input class="form-checkbox__input" type="checkbox" name="policy" id="policy">
+                    <label class="form-checkbox__label form-checkbox--text" for="policy">Соглашаюсь с рассылкой и принимаю </label>
+                    <a href="" class="form-checkbox__link">Условия договора</a>
                 </div>
 
 
-                <button type="submit" class="btn-modal">Отправить</button>
+                <button type="submit" class="form-btn">Отправить</button>
 
             </form>
         </div>
     </div>
 
-
+    <!-- SCRIPT -->
     <script src="./js/modal.js"></script>
 
 </body>
