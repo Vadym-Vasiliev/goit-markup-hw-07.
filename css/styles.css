@@ -113,6 +113,29 @@ body {
   /* outline: 1px solid skyblue; */
 }
 
+.visually-hidden{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  
+}
+
+.logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  color: var(--accent);
+}
+
 /* ------HEADER--------------------------- */
 
 .header {
@@ -134,18 +157,12 @@ body {
 
 /* ------LOGO--------------------------- */
 
-.logo {
+.header__logo{
   padding-top: 24px;
   padding-bottom: 25px;
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-
-  color: var(--accent);
 }
 
-.logo__accent--black{
+.header__logo--accent{
     color: var(--text-logo-head);
 }
 
@@ -286,12 +303,6 @@ body {
 .specifics {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.specifics__none {
-  position: absolute;
-  top: 9999px;
-  left: 9999px;
 }
 
 .specifics__list {
@@ -545,7 +556,12 @@ body {
     display: flex;
 }
 
-.logo__accent--white{
+.footer__logo{
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer__logo--accent{
     color: var(--text-logo-footer);
 }
 
