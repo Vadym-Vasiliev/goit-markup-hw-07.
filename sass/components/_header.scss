@@ -81,14 +81,11 @@
     }
 
     &__link {
+      
+      @include header-link;
       color: $text-main;
       display: flex;
       align-items: center;
-    }
-
-    &__link {
-      
-      @include header-link;
     
       &:hover,
       &:focus {
