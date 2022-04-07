@@ -730,7 +730,7 @@ body {
 
   color: var(--text-second);
   background-color: var(--bgc-btn-portfolio);
-}
+} 
 
 .gallery-filters__btn:hover,
 .gallery-filters__btn:focus {
