@@ -1,19 +1,18 @@
-.gallery {
+.gallery{
   padding-top: 94px;
   padding-bottom: 94px;
+}
 
+.gallery-filters{
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
 
-  &__filters {
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
+  &__item:not(:last-child){
+    margin-right: 8px;
   }
 
-    &__item:not(:last-child) {
-      margin-right: 8px;
-    }
-
-    &__btn {
+  &__btn {
     padding: 6px 22px;
     cursor: pointer;
     border-radius: 4px;
@@ -22,13 +21,13 @@
     font-size: 16px;
     line-height: 1.62;
   
-    transition: color 250ms $cubic,
-      background-color 250ms $cubic,
-      box-shadow 250ms $cubic;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
     color: $text-second;
     background-color: $bgc-btn-portfolio;
-  
+
     &:hover,
     &:focus {
       color: $text-btn;
@@ -38,7 +37,6 @@
     }
   }
 }
-
 
 
 
