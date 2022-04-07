@@ -2,17 +2,18 @@
   padding-top: 94px;
   padding-bottom: 94px;
 
-  &-filters {
+
+  &__filters {
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
   }
 
-  &-filters__item:not(:last-child) {
-    margin-right: 8px;
-  }
+    &__item:not(:last-child) {
+      margin-right: 8px;
+    }
 
-  &-filters__btn {
+    &__btn {
     padding: 6px 22px;
     cursor: pointer;
     border-radius: 4px;

@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  &-projects__item {
+    &__item {
     margin-right: 30px;
     width: calc((100% - 60px) / 3);
     border: 1px solid $bgc-card-portfolio;
@@ -16,7 +16,7 @@
     }
   }
 
-  &-projects__link {
+    &__link {
     display: block;
     transition: box-shadow 250ms $cubic;
   
