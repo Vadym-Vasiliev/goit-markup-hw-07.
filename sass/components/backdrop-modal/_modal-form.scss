@@ -20,66 +20,45 @@
       margin-bottom: 10px;
     }
   } 
-}
 
+  &__input{
+    @include field-form;
+    padding: 0 42px;
+    outline: none;
+    
+    &:focus {
+      border-color: $accent;
+    }
+  }
 
-// SAME_CLASS
+  &__label{
+    @include field-text;
+  }
 
-.modal-form__input,
-.modal-form__comment {
-  outline: none;
-  height: 40px;
-  border: 1px solid $border-form;
-  border-radius: 4px;
+  &__label:not(:last-child) {
+    margin-bottom: 4px;
+  }
 
-  transition: border-color 250ms $cubic;
-
+  &__icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-left: 15px;
   
-}
-
-.modal-form__input {
-  padding: 0 42px;
-  outline: none;
-
-  &:focus {
-    border-color: $accent;
-  }
-}
-
-// SAME_CLASS
-
-.modal-form__label,
-.form-checkbox__label {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-}
-
-.modal-form__label:not(:last-child) {
-  margin-bottom: 4px;
-}
-
-// MODAL_SVG
-
-.modal-form__icon {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  margin-left: 15px;
-
-  transition: color 250ms $cubic;
-
-  color: $text-second;
-
-  .modal-form__input:focus~& {
-    color: $accent;
-  }
-
-  &__icon{
-    fill: currentColor;
+    transition: color 250ms $cubic;
+  
+    color: $text-second;
+  
+    .modal-form__input:focus~& {
+      color: $accent;
+    }
+  
+    &__icon {
+      fill: currentColor;
+    }
   }
 }
 
@@ -93,13 +72,19 @@
   height: 120px;
   padding-left: 16px;
   padding-top: 12px;
+  outline: none;
+  border: 1px solid $border-form;
+  border-radius: 4px;
+    
+  transition: border-color 250ms $cubic;
 
-  color: rgba(117, 117, 117, 0.5);
+  color: $text-second;
 
   &:focus {
     border-color: $accent;
   }
 }
+
 
 // CHECKBOX
 
@@ -123,12 +108,12 @@
   }
 
   &__label {
-    letter-spacing: inherit;
     margin-left: 7px;
     margin-right: 7px;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
 
     &::before {
       content: "";

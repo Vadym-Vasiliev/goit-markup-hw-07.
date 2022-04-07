@@ -14,19 +14,22 @@
         visibility: hidden;
         opacity: 0;
         pointer-events: none;
+        
+        .backdrop-modal{
+            transform: translate(-50%, -50%) scale(0.1);
+        }
     }
-
 }
 
 
 .backdrop-modal {
     position: absolute;
-    transform: translate(-50%, -50%) scale(0.9);
     top: 50%;
     left: 50%;
     z-index: 18;
     opacity: 1;
 
+    transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms $cubic,
         opacity 250ms $cubic, box-shadow 250ms $cubic;
     min-width: 528px;
@@ -36,37 +39,38 @@
     border-radius: 4px;
 
     background-color: $bgc-main;
-}
 
-.backdrop-modal {
-    transform: translate(-50%, -50%) scale(1);
-}
-
-.backdrop-modal__btn {
-    width: 30px;
-    height: 30px;
-    margin-left: auto;
-    margin-top: 8px;
-    margin-right: 8px;
-    cursor: pointer;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    transition: color 250ms $cubic;
-
-    background-color: $bgc-main;
-    color: $btn-close;
-
-    &:hover,
-    &:focus{
-        fill:currentColor;
+    &__btn {
+        width: 30px;
+        height: 30px;
+        margin-left: auto;
+        margin-top: 8px;
+        margin-right: 8px;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        transition: color 250ms $cubic;
+    
+        background-color: $bgc-main;
+        color: $btn-close;
+    
+        &:hover,
+        &:focus {
+            fill: currentColor;
+        }
     }
-}
 
-.backdrop-modal__icon {
+
+    &__icon {
     fill: currentColor;
 }
+}
+
+
+
+
