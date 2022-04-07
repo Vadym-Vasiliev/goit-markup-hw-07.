@@ -280,6 +280,7 @@ body {
   text-transform: uppercase;
 
   color: var(--text-hero);
+
 }
 
 .button {
@@ -461,15 +462,17 @@ body {
   color: var(--icon-color-team-clients);
 }
 
-.soclist__svg {
-  fill: currentColor;
-}
 
 .soclist__link:hover,
 .soclist__link:focus {
   color: var(--hover-icon-team);
   background-color: var(--accent);
 }
+
+.soclist__svg {
+  fill: currentColor;
+}
+
 
 /* ------SAME_CLASS------ */
 
@@ -681,8 +684,6 @@ body {
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-
-
 
   color: var(--text-btn);
   background-color: var(--accent);
