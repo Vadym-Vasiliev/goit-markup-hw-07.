@@ -1,5 +1,6 @@
 @import "./utils/_variables.scss";
 @import "./base/_normalize.scss";
+@import "./components/mixins/mixins";
 @import "./utils/_reset.scss";
 @import "./components/general";
 
@@ -18,5 +19,3 @@
 
 @import "./components/backdrop-modal/modal-backdrop";
 @import "./components/backdrop-modal/modal-form";
-
-

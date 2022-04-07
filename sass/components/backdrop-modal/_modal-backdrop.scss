@@ -9,13 +9,15 @@
     transition: opacity 250ms $cubic;
 
     background-color: rgba(0, 0, 0, 0.2);
+
+    &__is-hidden{
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+    }
+
 }
 
-.backdrop__is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-}
 
 .backdrop-modal {
     position: absolute;

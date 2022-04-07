@@ -1,113 +1,115 @@
 .modal-form {
-    display: block;
-    padding: 10px 40px 40px 40px;
-}
+  display: block;
+  padding: 10px 40px 40px 40px;
 
-.modal-form__text {
+  &__text{
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
     margin-bottom: 12px;
-
+    
     color: $text-second;
-}
+  }
 
-.modal-form__field {
+  &__field{
     position: relative;
     display: flex;
     flex-direction: column;
-
-    &:not(:last-child){
-        margin-bottom: 10px;
+    
+    &:not(:last-child) {
+      margin-bottom: 10px;
     }
+  } 
 }
+
 
 // SAME_CLASS
 
 .modal-form__input,
 .modal-form__comment {
-    outline: none;
-    height: 40px;
-    border: 1px solid $border-form;
-    border-radius: 4px;
+  outline: none;
+  height: 40px;
+  border: 1px solid $border-form;
+  border-radius: 4px;
 
-    transition: border-color 250ms $cubic;
+  transition: border-color 250ms $cubic;
+
+  
 }
 
 .modal-form__input {
-    padding: 0 42px;
-    outline: none;
+  padding: 0 42px;
+  outline: none;
 
-    &:focus{
-        border-color: $accent;
-    }
+  &:focus {
+    border-color: $accent;
+  }
 }
 
 // SAME_CLASS
 
 .modal-form__label,
 .form-checkbox__label {
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
 }
 
 .modal-form__label:not(:last-child) {
-    margin-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 // MODAL_SVG
 
 .modal-form__icon {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    margin-left: 15px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-left: 15px;
 
-    transition: color 250ms $cubic;
+  transition: color 250ms $cubic;
 
-    color: $text-second;
+  color: $text-second;
 
-    .modal-form__input:focus ~ &{
-        color: $accent;
-    }
-}
+  .modal-form__input:focus~& {
+    color: $accent;
+  }
 
-.modal-form__icon {
+  &__icon{
     fill: currentColor;
+  }
 }
 
 // COMMENT
 
 .modal-form__comment {
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    resize: none;
-    height: 120px;
-    padding-left: 16px;
-    padding-top: 12px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  resize: none;
+  height: 120px;
+  padding-left: 16px;
+  padding-top: 12px;
 
-    color: rgba(117, 117, 117, 0.5);
+  color: rgba(117, 117, 117, 0.5);
 
-    &:focus{
-        border-color: $accent;
-    }
+  &:focus {
+    border-color: $accent;
+  }
 }
 
 // CHECKBOX
 
 .form-checkbox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
 
-.form-checkbox__input {
+  &__input {
     position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -118,20 +120,28 @@
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
-}
+  }
 
-.form-checkbox__label::before {
-    content: "";
-    display: inline-flex;
-    width: 16px;
-    height: 15px;
-    border-radius: 4px;
-    border: 2px solid $text-second;
+  &__label {
+    letter-spacing: inherit;
+    margin-left: 7px;
     margin-right: 7px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
 
-    transition: border-color 250ms $cubic;
+    &::before {
+      content: "";
+      display: inline-flex;
+      width: 16px;
+      height: 15px;
+      border-radius: 4px;
+      border: 2px solid $text-second;
+      margin-right: 7px;
 
-    .form-checkbox__input:checked + &{
+      transition: border-color 250ms $cubic;
+
+      .form-checkbox__input:checked+& {
         background-color: $accent;
         background-image: url(../img/icon/check.svg);
         background-repeat: no-repeat;
@@ -139,25 +149,18 @@
         background-size: contain;
         background-origin: border-box;
         border-color: $accent;
+      }
     }
-}
+  }
 
-.form-checkbox--text {
-    letter-spacing: inherit;
-    margin-left: 7px;
-    margin-right: 7px;
+  &__link {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-}
+    text-decoration: underline;
 
-.form-checkbox__link{
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  text-decoration: underline;
-
-  color: $accent;
+    color: $accent;
+  }
 }
 
 .form-btn {

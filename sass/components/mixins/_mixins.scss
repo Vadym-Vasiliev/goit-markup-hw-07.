@@ -1,0 +1,28 @@
+@mixin footer-text {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: $text-footer;
+}
+
+@mixin team-content {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    
+    color: $text-second;
+}
+
+@mixin same-title {
+    margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+
+  color: $text-second;
+
+}

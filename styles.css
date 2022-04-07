@@ -1029,6 +1029,15 @@ body {
   margin: -1px;
 }
 
+.form-checkbox__label{
+  letter-spacing: inherit;
+  margin-left: 7px;
+  margin-right: 7px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
 .form-checkbox__label::before{
   content: "";
   display: inline-flex;
@@ -1049,16 +1058,6 @@ body {
   background-size: contain;
   background-origin: border-box;
   border-color: var(--accent);
-
-}
-
-.form-checkbox--text {
-  letter-spacing: inherit;
-  margin-left: 7px;
-  margin-right: 7px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;  
 
 }
 
