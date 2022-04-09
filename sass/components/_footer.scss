@@ -1,0 +1,52 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $bgc-hero-footer;
+
+  &__container {
+    display: flex;
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 20px;
+  
+    &--accent {
+      color: $text-logo-footer;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+  
+    transition: color 250ms $cubic;
+  
+    color: $link-footer;
+  
+    &--street {
+      color: $text-footer;
+    }
+  
+    &:hover,
+    &:focus {
+      color: $accent;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
