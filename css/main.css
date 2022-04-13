@@ -741,9 +741,7 @@ body {
 }
 
 .footer__box {
-  padding-left: 112px;
-  padding-right: 112px;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .footer__logo {
@@ -777,9 +775,7 @@ body {
 }
 
 .footer-soclist {
-  padding-right: 137px;
-  padding-left: 137px;
-  padding-top: 12px;
+  margin-bottom: 60px;
 }
 
 .footer-soclist__text {
@@ -813,11 +809,6 @@ body {
 
 .footer-soclist__link:hover, .footer-soclist__link:focus {
   background-color: #2196f3;
-}
-
-.footer-subscribe {
-  padding-bottom: 60px;
-  padding-top: 60px;
 }
 
 .footer-subscribe__text {
