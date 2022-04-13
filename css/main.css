@@ -550,6 +550,7 @@ body {
 
 .interests {
   padding-bottom: 94px;
+  display: none;
 }
 
 .interests__title {
@@ -599,8 +600,8 @@ body {
 }
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
 }
 
@@ -615,8 +616,8 @@ body {
 
 .team__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  text-align: center;
 }
 
 .team__item {
@@ -626,7 +627,7 @@ body {
 }
 
 .team__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .soclist {
@@ -662,6 +663,7 @@ body {
 .team-content {
   padding-top: 30px;
   padding-bottom: 16px;
+  text-align: center;
 }
 
 .team-content__name {
