@@ -504,20 +504,21 @@ body {
 }
 
 .specifics {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .specifics__list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .specifics__item {
-  width: 270px;
+  max-width: 100%;
 }
 
 .specifics__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .specifics__title {
@@ -526,6 +527,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
   color: #212121;
 }
 
