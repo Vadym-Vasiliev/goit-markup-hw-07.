@@ -732,11 +732,18 @@ body {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  text-align: center;
   background-color: #2f303a;
 }
 
 .footer__container {
-  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__box {
+  padding-left: 112px;
+  padding-right: 112px;
+  padding-bottom: 60px;
 }
 
 .footer__logo {
@@ -749,7 +756,7 @@ body {
 }
 
 .footer__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .footer__link {
@@ -770,7 +777,8 @@ body {
 }
 
 .footer-soclist {
-  margin-left: 70px;
+  padding-right: 137px;
+  padding-left: 137px;
   padding-top: 12px;
 }
 
@@ -785,6 +793,7 @@ body {
 
 .footer-soclist__list {
   display: flex;
+  justify-content: center;
 }
 
 .footer-soclist__item:not(:last-child) {
@@ -807,8 +816,8 @@ body {
 }
 
 .footer-subscribe {
-  margin-left: 93px;
-  padding-top: 12px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .footer-subscribe__text {
@@ -821,10 +830,10 @@ body {
 }
 
 .footer-subscribe__input {
+  margin-bottom: 20px;
   outline: none;
-  padding-left: 16px;
   height: 50px;
-  width: 358px;
+  width: 450px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   font-weight: 400;
@@ -841,7 +850,6 @@ body {
 }
 
 .footer-subscribe__btn {
-  margin-left: 12px;
   border: 1px solid transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -853,7 +861,6 @@ body {
   letter-spacing: 0.06em;
   cursor: pointer;
   display: inline-flex;
-  align-items: center;
   color: #ffffff;
   background-color: #2196f3;
 }
