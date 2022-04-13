@@ -870,14 +870,19 @@ body {
 }
 
 .gallery {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .gallery-filters {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -15px;
+}
+
+.gallery-filters__item {
+  margin-top: 15px;
 }
 
 .gallery-filters__item:not(:last-child) {
