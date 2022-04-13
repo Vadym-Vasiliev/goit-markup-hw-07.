@@ -909,21 +909,14 @@ body {
 }
 
 .gallery-projects {
-  display: flex;
   flex-wrap: wrap;
 }
 
 .gallery-projects__item {
-  margin-right: 30px;
-  width: calc((100% - 60px) / 3);
   border: 1px solid #eeeeee;
 }
 
-.gallery-projects__item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.gallery-projects__item:not(:nth-last-child(-n + 3)) {
+.gallery-projects__item:not(:last-child) {
   margin-bottom: 30px;
 }
 
