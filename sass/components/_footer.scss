@@ -5,6 +5,10 @@
 
   background-color: $bgc-hero-footer;
 
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
+
   &__tablet {
     @media screen and (min-width: 768px) {
       display: flex;
@@ -16,6 +20,10 @@
 
   &__box {
     margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
   }
 
   &__logo {
