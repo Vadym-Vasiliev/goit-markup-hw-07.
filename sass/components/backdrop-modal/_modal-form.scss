@@ -1,37 +1,44 @@
 .modal-form {
   display: block;
-  padding: 10px 40px 40px 40px;
+  padding: 40px;
 
-  &__text{
+  &__text {
+    text-align: center;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     margin-bottom: 12px;
-    
+
     color: $text-second;
   }
 
-  &__field{
+  &__field {
     position: relative;
     display: flex;
     flex-direction: column;
-    
+
     &:not(:last-child) {
       margin-bottom: 10px;
     }
-  } 
 
-  &__input{
+    &:hover,
+    &:focus {
+      color: $accent;
+    }
+  }
+
+  &__input {
     @include field-form;
     padding: 0 42px;
     outline: none;
-    
-    &:focus {
+
+    .modal-form__field:hover &,
+    .modal-form__field:focus & {
       border-color: $accent;
     }
   }
 
-  &__label{
+  &__label {
     @include field-text;
   }
 
@@ -47,17 +54,14 @@
     width: 18px;
     height: 18px;
     margin-left: 15px;
-  
+
     transition: color 250ms $cubic;
-  
-    color: $text-second;
-  
-    .modal-form__input:focus~& {
-      color: $accent;
-    }
-  
-    &__icon {
-      fill: currentColor;
+
+    fill: $text-second;
+
+    .modal-form__field:hover &,
+    .modal-form__field:focus & {
+      fill: $accent;
     }
   }
 }
@@ -75,23 +79,20 @@
   outline: none;
   border: 1px solid $border-form;
   border-radius: 4px;
-    
+
   transition: border-color 250ms $cubic;
 
   color: $text-second;
 
+  &:hover,
   &:focus {
     border-color: $accent;
   }
 }
 
-
 // CHECKBOX
 
 .form-checkbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 30px;
 
   &__input {
@@ -108,15 +109,14 @@
   }
 
   &__label {
-    margin-left: 7px;
-    margin-right: 7px;
+    margin-left: 8px;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
 
     &::before {
-      content: "";
+      content: '';
       display: inline-flex;
       width: 16px;
       height: 15px;
@@ -126,7 +126,7 @@
 
       transition: border-color 250ms $cubic;
 
-      .form-checkbox__input:checked+& {
+      .form-checkbox__input:checked + & {
         background-color: $accent;
         background-image: url(../img/icon/check.svg);
         background-repeat: no-repeat;
@@ -140,8 +140,8 @@
 
   &__link {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     text-decoration: underline;
 
     color: $accent;
@@ -149,7 +149,8 @@
 }
 
 .form-btn {
-  margin: 0 124px;
+  display: block;
+  margin: 0 auto;
   padding: 10px 55px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
