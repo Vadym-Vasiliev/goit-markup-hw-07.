@@ -7,15 +7,26 @@
     margin: -15px;
   }
 
+  @media screen and (min-width: 1200px) {
+    margin: -15px;
+  }
+
   &__item {
     border: 1px solid $bgc-card-portfolio;
 
-    &:not(:last-child) {
-      margin-bottom: 30px;
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
     }
 
     @media screen and (min-width: 768px) {
       width: calc((100% - 30px - 30px) / 2);
+      margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 60px - 30px) / 3);
       margin: 15px;
     }
   }
