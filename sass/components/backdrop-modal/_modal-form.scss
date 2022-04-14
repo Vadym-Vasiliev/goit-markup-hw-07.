@@ -21,8 +21,7 @@
       margin-bottom: 10px;
     }
 
-    &:hover,
-    &:focus {
+    &:hover {
       color: $accent;
     }
   }
@@ -30,10 +29,12 @@
   &__input {
     @include field-form;
     padding: 0 42px;
-    outline: none;
 
-    .modal-form__field:hover &,
-    .modal-form__field:focus & {
+    .modal-form__field:hover & {
+      border-color: $accent;
+    }
+
+    &:focus {
       border-color: $accent;
     }
   }
@@ -59,8 +60,7 @@
 
     fill: $text-second;
 
-    .modal-form__field:hover &,
-    .modal-form__field:focus & {
+    .modal-form__field:hover & {
       fill: $accent;
     }
   }
@@ -76,9 +76,9 @@
   height: 120px;
   padding-left: 16px;
   padding-top: 12px;
-  outline: none;
   border: 1px solid $border-form;
   border-radius: 4px;
+  outline: none;
 
   transition: border-color 250ms $cubic;
 
