@@ -313,11 +313,6 @@ body {
   color: #757575;
 }
 
-.container-wrap {
-  max-width: 100%;
-  overflow: hidden;
-}
-
 .container {
   padding-left: 15px;
   padding-right: 15px;
