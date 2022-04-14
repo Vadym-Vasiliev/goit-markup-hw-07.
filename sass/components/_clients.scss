@@ -2,6 +2,11 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
   &__title {
     margin-bottom: 50px;
     font-weight: 700;
@@ -16,6 +21,10 @@
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
+
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
   }
 
   &__item {
@@ -48,6 +57,10 @@
 
     @media screen and (min-width: 768px) {
       width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 170px;
     }
   }
 
