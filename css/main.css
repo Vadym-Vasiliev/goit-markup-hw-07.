@@ -961,12 +961,27 @@ body {
   flex-wrap: wrap;
 }
 
+@media screen and (min-width: 768px) {
+  .gallery-projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
 .gallery-projects__item {
   border: 1px solid #eeeeee;
 }
 
 .gallery-projects__item:not(:last-child) {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-projects__item {
+    width: calc((100% - 30px - 30px) / 2);
+    margin: 15px;
+  }
 }
 
 .gallery-projects__link {
