@@ -20,6 +20,10 @@
 
   &__item {
     margin: 15px;
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 60px - 30px) / 3);
+    }
   }
 
   &__link {
@@ -40,6 +44,10 @@
     &:focus {
       color: $accent;
       border-color: $accent;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 226px;
     }
   }
 

@@ -5,8 +5,13 @@
 
   background-color: $bgc-hero-footer;
 
-  &__container {
-    flex-wrap: wrap;
+  &__tablet {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-around;
+    }
   }
 
   &__box {
