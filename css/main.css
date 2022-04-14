@@ -923,6 +923,13 @@ body {
   margin-top: -15px;
 }
 
+@media screen and (min-width: 768px) {
+  .gallery-filters {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .gallery-filters__item {
   margin-top: 15px;
 }
