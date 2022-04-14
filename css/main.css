@@ -313,6 +313,11 @@ body {
   color: #757575;
 }
 
+.container-wrap {
+  max-width: 100%;
+  overflow: hidden;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -630,17 +635,24 @@ body {
 .team__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  margin: -15px;
 }
 
 .team__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
+  margin: 15px;
 }
 
-.team__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: calc((100% - 30px - 30px) / 2);
+  }
+}
+
+.team__img {
+  width: 100%;
 }
 
 .soclist {

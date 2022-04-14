@@ -9,6 +9,11 @@ body {
   color: $text-main;
 }
 
+.container-wrap {
+  max-width: 100%;
+  overflow: hidden;
+}
+
 .container {
   //   width: 1200px;
   padding-left: 15px;
