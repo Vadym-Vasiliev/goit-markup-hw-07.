@@ -38,6 +38,10 @@
       border-color: $accent;
     }
 
+    @media screen and (max-width: 479px) {
+      width: 100%;
+    }
+
     @media screen and (min-width: 1200px) {
       width: 358px;
       margin-bottom: 0;
@@ -58,7 +62,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 
     color: $text-btn;
     background-color: $accent;
