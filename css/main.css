@@ -1263,7 +1263,15 @@ body {
   }
 }
 
-.backdrop-modal__btn {
+.modal-form {
+  display: block;
+  padding: 40px;
+}
+
+.modal-form__btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
   margin-left: auto;
@@ -1280,17 +1288,12 @@ body {
   color: #000000;
 }
 
-.backdrop-modal__btn:hover, .backdrop-modal__btn:focus {
+.modal-form__btn:hover, .modal-form__btn:focus {
   color: #2196f3;
 }
 
-.backdrop-modal__icon {
+.modal-form__icon {
   fill: currentColor;
-}
-
-.modal-form {
-  display: block;
-  padding: 40px;
 }
 
 .modal-form__text {

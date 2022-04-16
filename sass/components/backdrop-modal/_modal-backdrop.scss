@@ -42,35 +42,6 @@
     width: 528px;
     height: 581px;
   }
-
-  &__btn {
-    width: 30px;
-    height: 30px;
-    margin-left: auto;
-    margin-top: 8px;
-    margin-right: 8px;
-    cursor: pointer;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    transition: color 250ms $cubic;
-
-    background-color: $bgc-main;
-    color: $btn-close;
-
-    &:hover,
-    &:focus {
-      color: $accent;
-    }
-  }
-
-  &__icon {
-    fill: currentColor;
-  }
 }
 
 // .backdrop {
