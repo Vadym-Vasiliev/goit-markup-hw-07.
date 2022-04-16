@@ -156,13 +156,18 @@
           <ul class="interests__list">
             <li class="interests__item">
               <div class="hidden-box">
-                <img
-                  src="./img/interes.jpg"
-                  class="hidden-box__img"
-                  alt="интересы"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/adaptive/desk-interes-1-1x-min.jpg 1x,
+                      ./img/adaptive/desk-interes-1-2x-min.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="33.3333vw"
+                  />
+                  <img src="./img/interes.jpg" class="hidden-box__img" alt="интересы" />
+                </picture>
+
                 <div class="hidden-box__content">
                   <p class="hidden-box__text">Десктопные приложения</p>
                 </div>
@@ -170,13 +175,18 @@
             </li>
             <li class="interests__item">
               <div class="hidden-box">
-                <img
-                  src="./img/interes2.jpg"
-                  class="hidden-box__img"
-                  alt="интересы"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/adaptive/desk-interes-2-1x-min.jpg 1x,
+                      ./img/adaptive/desk-interes-2-2x-min.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="33.3333vw"
+                  />
+                  <img src="./img/interes2.jpg" class="hidden-box__img" alt="интересы" />
+                </picture>
+
                 <div class="hidden-box__content">
                   <p class="hidden-box__text">Мобильные приложения</p>
                 </div>
@@ -184,13 +194,18 @@
             </li>
             <li class="interests__item">
               <div class="hidden-box">
-                <img
-                  src="./img/interes3.jpg"
-                  class="hidden-box__img"
-                  alt="интересы"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/adaptive/desk-interes-3-1x-min.jpg 1x,
+                      ./img/adaptive/desk-interes-3-2x-min.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="33.3333vw"
+                  />
+                  <img src="./img/interes3.jpg" class="hidden-box__img" alt="интересы" />
+                </picture>
+
                 <div class="hidden-box__content">
                   <p class="hidden-box__text">Дизайнерские решения</p>
                 </div>
@@ -207,7 +222,35 @@
 
           <ul class="team__list">
             <li class="team__item">
-              <img src="./img/team.jpg" class="team__img" alt="портреты" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/adaptive/mob-team-1-1x-min.jpg 1x,
+                    ./img/adaptive/mob-team-1-2x-min.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  sizes="100vw"
+                />
+                <source
+                  srcset="
+                    ./img/adaptive/tab-team-1-1x-min.jpg 1x,
+                    ./img/adaptive/tab-team-1-2x-min.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  sizes="50vw"
+                />
+                <source
+                  srcset="
+                    ./img/adaptive/desk-team-1-1x-min.jpg 1x,
+                    ./img/adaptive/desk-team-1-2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="25vw"
+                />
+
+                <img src="./img/team.jpg" class="team__img" alt="портреты" />
+              </picture>
+
               <div class="team-content">
                 <h3 class="team-content__name">Игорь Демьяненко</h3>
                 <p class="team-content__position">Product Designer</p>
@@ -245,7 +288,34 @@
               </ul>
             </li>
             <li class="team__item">
-              <img src="./img/team2.jpg" class="team__img" alt="портреты" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/adaptive/mob-team-2-1x-min.jpg 1x,
+                    ./img/adaptive/mob-team-2-2x-min.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  sizes="100vw"
+                />
+                <source
+                  srcset="
+                    ./img/adaptive/tab-team-2-1x-min.jpg 1x,
+                    ./img/adaptive/tab-team-2-2x-min.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  sizes="50vw"
+                />
+                <source
+                  srcset="
+                    ./img/adaptive/desk-team-2-1x-min.jpg 1x,
+                    ./img/adaptive/desk-team-2-2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="25vw"
+                />
+
+                <img src="./img/team2.jpg" class="team__img" alt="портреты" />
+              </picture>
               <div class="team-content">
                 <h3 class="team-content__name">Ольга Репина</h3>
                 <p class="team-content__position">Frontend Developer</p>
@@ -283,7 +353,34 @@
               </ul>
             </li>
             <li class="team__item">
-              <img src="./img/team3.jpg" class="team__img" alt="портреты" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/adaptive/mob-team-3-1x-min.jpg 1x,
+                    ./img/adaptive/mob-team-3-2x-min.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  sizes="100vw"
+                />
+                <source
+                  srcset="
+                    ./img/adaptive/tab-team-3-1x-min.jpg 1x,
+                    ./img/adaptive/tab-team-3-2x-min.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  sizes="50vw"
+                />
+                <source
+                  srcset="
+                    ./img/adaptive/desk-team-3-1x-min.jpg 1x,
+                    ./img/adaptive/desk-team-3-2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="25vw"
+                />
+
+                <img src="./img/team3.jpg" class="team__img" alt="портреты" />
+              </picture>
               <div class="team-content">
                 <h3 class="team-content__name">Николай Тарасов</h3>
                 <p class="team-content__position">Marketing</p>
@@ -321,7 +418,34 @@
               </ul>
             </li>
             <li class="team__item">
-              <img src="./img/team4.jpg" class="team__img" alt="портреты" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/adaptive/mob-team-4-1x-min.jpg 1x,
+                    ./img/adaptive/mob-team-4-2x-min.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  sizes="100vw"
+                />
+                <source
+                  srcset="
+                    ./img/adaptive/tab-team-4-1x-min.jpg 1x,
+                    ./img/adaptive/tab-team-4-2x-min.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  sizes="50vw"
+                />
+                <source
+                  srcset="
+                    ./img/adaptive/desk-team-4-1x-min.jpg 1x,
+                    ./img/adaptive/desk-team-4-2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="25vw"
+                />
+
+                <img src="./img/team4.jpg" class="team__img" alt="портреты" />
+              </picture>
               <div class="team-content">
                 <h3 class="team-content__name">Михаил Ермаков</h3>
                 <p class="team-content__position">UI Designer</p>
