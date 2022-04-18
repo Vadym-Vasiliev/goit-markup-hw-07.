@@ -16,31 +16,22 @@
 
   <body>
     <!-- HEADER -->
+
+    <!-- HEADER -->
     <header class="header">
       <div class="header__container container">
         <a href="./index.html" class="header__logo logo"
           >Web<span class="header__logo--accent">Studio</span></a
         >
 
-        <button
-          class="header-btn"
-          type="button"
-          aria-expanded="false"
-          aria-controls="nav-menu"
-          data-menu-button
-        >
-          <svg
-            class="header-btn__svg"
-            width="40"
-            height="40"
-            aria-label="Переключатель мобильного меню"
-          >
-            <use class="header-btn__icon-cross" href="./img/icon/sprite.svg#icon-cross"></use>
-            <use class="header-btn__icon-burger" href="./img/icon/sprite.svg#icon-burger"></use>
+        <button type="button" class="menu-btn" data-menu-button>
+          <svg class="menu-btn__svg" width="40" height="40">
+            <use class="menu-btn__icon--burger" href="./img/icon/sprite.svg#icon-burger"></use>
+            <use class="menu-btn__icon--cross" href="./img/icon/sprite.svg#icon-cross"></use>
           </svg>
         </button>
 
-        <div class="nav-menu" id="nav-menu" data-menu>
+        <div class="menu-container" data-menu>
           <nav class="site-nav">
             <ul class="site-nav__list">
               <li class="site-nav__item">
@@ -53,45 +44,47 @@
             </ul>
           </nav>
 
-          <ul class="auth-site">
-            <li class="auth-site__item">
-              <a href="mailto:info@devstudio.com" class="auth-site__link">
-                <svg class="auth-site__svg" width="16" height="12">
-                  <use href="./img/icon/sprite.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="auth-site__item">
-              <a href="tel:+380961111111" class="auth-site__link auth-site__link--tel">
-                <svg class="auth-site__svg" width="10" height="16">
-                  <use href="./img/icon/sprite.svg#icon-tel"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
+          <div>
+            <ul class="auth-site">
+              <li class="auth-site__item">
+                <a href="tel:+380961111111" class="auth-site__link auth-site__link--tel">
+                  <svg class="auth-site__svg" width="10" height="16">
+                    <use href="./img/icon/sprite.svg#icon-tel"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="auth-site__item">
+                <a href="mailto:info@devstudio.com" class="auth-site__link">
+                  <svg class="auth-site__svg" width="16" height="12">
+                    <use href="./img/icon/sprite.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
 
-          <ul class="soc-auth">
-            <li class="soc-auth__item">
-              <a href="https://www.instagram.com/" class="soc-auth__link">Instagram</a>
-            </li>
-            <li class="soc-auth__item">
-              <a href="https://twitter.com/home" class="soc-auth__link">Twitter</a>
-            </li>
-            <li class="soc-auth__item">
-              <a href="https://www.facebook.com/" class="soc-auth__link">Facebook</a>
-            </li>
-            <li class="soc-auth__item">
-              <a href="https://www.linkedin.com/" class="soc-auth__link">LinkedIn</a>
-            </li>
-          </ul>
+            <ul class="soc-auth">
+              <li class="soc-auth__item">
+                <a href="https://www.instagram.com/" class="soc-auth__link">Instagram</a>
+              </li>
+              <li class="soc-auth__item">
+                <a href="https://twitter.com/home" class="soc-auth__link">Twitter</a>
+              </li>
+              <li class="soc-auth__item">
+                <a href="https://www.facebook.com/" class="soc-auth__link">Facebook</a>
+              </li>
+              <li class="soc-auth__item">
+                <a href="https://www.linkedin.com/" class="soc-auth__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
 
     <!-- MAIN -->
-    <!-- <div class="container-wrap"> -->
+
     <main>
       <!-- HERO -->
       <section class="hero">
@@ -178,7 +171,6 @@
                       ./img/adaptive/desk-interes-1-2x-min.jpg 2x
                     "
                     media="(min-width: 1200px)"
-                    sizes="33.3333vw"
                   />
                   <img src="./img/interes.jpg" class="hidden-box__img" alt="интересы" />
                 </picture>
@@ -197,7 +189,6 @@
                       ./img/adaptive/desk-interes-2-2x-min.jpg 2x
                     "
                     media="(min-width: 1200px)"
-                    sizes="33.3333vw"
                   />
                   <img src="./img/interes2.jpg" class="hidden-box__img" alt="интересы" />
                 </picture>
@@ -216,7 +207,6 @@
                       ./img/adaptive/desk-interes-3-2x-min.jpg 2x
                     "
                     media="(min-width: 1200px)"
-                    sizes="33.3333vw"
                   />
                   <img src="./img/interes3.jpg" class="hidden-box__img" alt="интересы" />
                 </picture>
@@ -244,7 +234,6 @@
                     ./img/adaptive/mob-team-1-2x-min.jpg 2x
                   "
                   media="(max-width: 767px)"
-                  sizes="100vw"
                 />
                 <source
                   srcset="
@@ -252,7 +241,6 @@
                     ./img/adaptive/tab-team-1-2x-min.jpg 2x
                   "
                   media="(min-width: 768px) and (max-width: 1199px)"
-                  sizes="50vw"
                 />
                 <source
                   srcset="
@@ -260,7 +248,6 @@
                     ./img/adaptive/desk-team-1-2x-min.jpg 2x
                   "
                   media="(min-width: 1200px)"
-                  sizes="25vw"
                 />
 
                 <img src="./img/team.jpg" class="team__img" alt="портреты" />
@@ -310,7 +297,6 @@
                     ./img/adaptive/mob-team-2-2x-min.jpg 2x
                   "
                   media="(max-width: 767px)"
-                  sizes="100vw"
                 />
                 <source
                   srcset="
@@ -318,7 +304,6 @@
                     ./img/adaptive/tab-team-2-2x-min.jpg 2x
                   "
                   media="(min-width: 768px) and (max-width: 1199px)"
-                  sizes="50vw"
                 />
                 <source
                   srcset="
@@ -326,7 +311,6 @@
                     ./img/adaptive/desk-team-2-2x-min.jpg 2x
                   "
                   media="(min-width: 1200px)"
-                  sizes="25vw"
                 />
 
                 <img src="./img/team2.jpg" class="team__img" alt="портреты" />
@@ -375,7 +359,6 @@
                     ./img/adaptive/mob-team-3-2x-min.jpg 2x
                   "
                   media="(max-width: 767px)"
-                  sizes="100vw"
                 />
                 <source
                   srcset="
@@ -383,7 +366,6 @@
                     ./img/adaptive/tab-team-3-2x-min.jpg 2x
                   "
                   media="(min-width: 768px) and (max-width: 1199px)"
-                  sizes="50vw"
                 />
                 <source
                   srcset="
@@ -391,7 +373,6 @@
                     ./img/adaptive/desk-team-3-2x-min.jpg 2x
                   "
                   media="(min-width: 1200px)"
-                  sizes="25vw"
                 />
 
                 <img src="./img/team3.jpg" class="team__img" alt="портреты" />
@@ -440,7 +421,6 @@
                     ./img/adaptive/mob-team-4-2x-min.jpg 2x
                   "
                   media="(max-width: 767px)"
-                  sizes="100vw"
                 />
                 <source
                   srcset="
@@ -448,7 +428,6 @@
                     ./img/adaptive/tab-team-4-2x-min.jpg 2x
                   "
                   media="(min-width: 768px) and (max-width: 1199px)"
-                  sizes="50vw"
                 />
                 <source
                   srcset="
@@ -456,7 +435,6 @@
                     ./img/adaptive/desk-team-4-2x-min.jpg 2x
                   "
                   media="(min-width: 1200px)"
-                  sizes="25vw"
                 />
 
                 <img src="./img/team4.jpg" class="team__img" alt="портреты" />
